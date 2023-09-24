@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1">
+		<link rel="stylesheet" href="style.css"/>
+        <script src="js.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/27095aecaf.js" crossorigin="anonymous"></script>
+		
+		<title>1lyushken</title>
+	</head>
+	<body id="body1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assec\js\app.js"></script>
+
+<header class="header" id="header">
+		
+    <div class="container"></div>
+    <div class="header_inner">
+        <div class="header_logo">1lyushken</div>
+    </div>
+    
+    
+</header>  
+ <div class="intro" id="intro">
+     <div class="container">
+             <div class="intro_inner">
+                <h1 class="intro_title">WELCOME TO ME</h1>
+                <button id="openMyPopup" data-popup="myPopup" onClick="openPopup('#myPopup')" aria-controls="myPopup" aria-label="Open popup">Learn more</button>
+             </div>
+     </div>
+
+ <div class="popup" id="myPopup" aria-hidden="true" onClick="if(event.target == this){closePopup('#myPopup');}">
+    <div class="wrapper" aria-labelledby="popupTitle" aria-describedby="popupText" aria-modal="true">
+      <h2 id="popupTitle">Кратко обо мне</h2>
+      <p id="popupText">Больше всего мне нравиться верстать сайты, еще в 9 классе я ходил в  ГБПОУ "Челябинский энергетический колледж им С.М.Кирова" на курсы по "созданию сайтов". А предложил ходить мне страший брат, который закончил этот колледж когда мне было 5 лет. Там дали основы, и больше ничего интересного, поэтому я хочу к вам учиться&#10084; </p>
+      <img src="cat.jpg" alt="Милый котик." width="300" height="167" class="img" id="img">
+      <button id="closePopup" onClick="closePopup('#myPopup');" aria-label="Close popup">Закрыть</button>
+    </div>
+  </div>
+	</body>
+</html>
